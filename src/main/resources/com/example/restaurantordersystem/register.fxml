@@ -37,7 +37,7 @@
 
             <Button text="Back to Login"
                     onAction="#backToLogin"
-                    prefWidth="220"/>
+                    prefWidth="250"/>
 
             <Label fx:id="statusLabel"
                    text=""
