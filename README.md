@@ -122,7 +122,7 @@ Multiple clients can be opened simultaneously.
 3. Client requests menu items from the server
 4. User selects menu items
 5. Order is sent to the server
-6. Server processes and confirms the order
+6. Server receives the order and sends a confirmation response
 
 ---
 
