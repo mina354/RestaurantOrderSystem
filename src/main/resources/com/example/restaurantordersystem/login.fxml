@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller=
+                    "com.example.restaurantordersystem.LoginController">
+
+    <center>
+
+        <VBox spacing="15"
+              alignment="CENTER">
+
+            <padding>
+                <Insets top="20"
+                        right="20"
+                        bottom="20"
+                        left="20"/>
+            </padding>
+
+            <Label text="Restaurant Login"
+                   style="-fx-font-size: 22px;"/>
+
+            <TextField fx:id="usernameField"
+                       promptText="Username"
+                       maxWidth="250"/>
+
+            <PasswordField fx:id="passwordField"
+                           promptText="Password"
+                           maxWidth="250"/>
+
+            <Button text="Login"
+                    onAction="#handleLogin"
+                    prefWidth="250"/>
+
+            <Button text="Register"
+                    onAction="#openRegisterScreen"/>
+
+            <Label fx:id="statusLabel"
+                   text=""
+                   wrapText="true"/>
+
+        </VBox>
+
+    </center>
+
+</BorderPane>

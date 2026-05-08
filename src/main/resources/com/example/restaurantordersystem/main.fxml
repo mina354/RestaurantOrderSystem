@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller=
+                    "com.example.restaurantordersystem.MenuController">
+
+    <top>
+
+        <Label text="Restaurant Dashboard"
+               style="-fx-font-size: 20px;"
+               BorderPane.alignment="CENTER">
+
+            <BorderPane.margin>
+                <Insets top="15"
+                        right="15"
+                        bottom="15"
+                        left="15"/>
+            </BorderPane.margin>
+
+        </Label>
+
+    </top>
+
+    <center>
+
+        <VBox spacing="15"
+              alignment="CENTER">
+
+            <ListView fx:id="menuListView"
+                      prefHeight="200"
+                      maxWidth="400"
+                      VBox.vgrow="ALWAYS"/>
+
+            <ListView fx:id="orderHistoryListView"
+                      prefHeight="150"
+                      maxWidth="400"
+                      VBox.vgrow="ALWAYS"/>
+
+            <Button text="Request Menu"
+                    onAction="#requestMenu"
+                    prefWidth="220"/>
+
+            <Button text="Place Order"
+                    onAction="#placeOrder"
+                    prefWidth="220"/>
+
+            <Label fx:id="statusLabel"
+                   text="Connected"
+                   wrapText="true"/>
+
+            <padding>
+                <Insets top="20"
+                        right="20"
+                        bottom="20"
+                        left="20"/>
+            </padding>
+
+        </VBox>
+
+    </center>
+
+</BorderPane>

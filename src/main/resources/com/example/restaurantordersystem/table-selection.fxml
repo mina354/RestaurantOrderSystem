@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller=
+                    "com.example.restaurantordersystem.TableSelectionController">
+
+    <top>
+
+        <Label text="Select Table"
+               style="-fx-font-size: 22px;"
+               BorderPane.alignment="CENTER">
+
+            <BorderPane.margin>
+                <Insets top="15"
+                        right="15"
+                        bottom="15"
+                        left="15"/>
+            </BorderPane.margin>
+
+        </Label>
+
+    </top>
+
+    <center>
+
+        <VBox spacing="15"
+              alignment="CENTER">
+
+            <Button text="Table 1"
+                    onAction="#selectTable1"
+                    prefWidth="220"/>
+
+            <Button text="Table 2"
+                    onAction="#selectTable2"
+                    prefWidth="220"/>
+
+            <Label fx:id="infoLabel"
+                   text="Choose a table."/>
+
+        </VBox>
+
+    </center>
+
+</BorderPane>
