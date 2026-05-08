@@ -98,7 +98,7 @@ public class MenuController {
                                 );
 
                         statusLabel.setText(
-                                "Menu loaded."
+                                "Menu loaded successfully."
                         );
                     });
 
