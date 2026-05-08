@@ -28,6 +28,11 @@ public class TableSelectionController {
     private void openMainScreen(
             int tableId) {
 
+        infoLabel.setText(
+                "Opening table "
+                        + tableId
+        );
+
         try {
 
             FXMLLoader loader =
